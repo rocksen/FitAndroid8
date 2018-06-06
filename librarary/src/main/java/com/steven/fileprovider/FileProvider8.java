@@ -1,4 +1,4 @@
-package com.zhy.base.fileprovider;
+package com.steven.fileprovider;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,10 +11,12 @@ import java.io.File;
 import java.util.List;
 
 /**
- * Created by zhanghongyang01 on 17/5/31.
+ * @author AZF_Steven
+ * @date 2018/6/6
+ * @Descroption
  */
 
-public class FileProvider7 {
+public class FileProvider8 {
 
     public static Uri getUriForFile(Context context, File file) {
         Uri fileUri = null;
@@ -27,11 +29,9 @@ public class FileProvider7 {
     }
 
 
-
     public static Uri getUriForFile24(Context context, File file) {
         Uri fileUri = android.support.v4.content.FileProvider.getUriForFile(context,
-                context.getPackageName() + ".android7.fileprovider",
-                file);
+                context.getPackageName() + ".android8.fileprovider", file);
         return fileUri;
     }
 

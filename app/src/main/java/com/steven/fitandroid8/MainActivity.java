@@ -1,23 +1,22 @@
-package com.zhy.fitandroid7;
+package com.steven.fitandroid8;
 
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.zhy.base.fileprovider.FileProvider7;
+import com.steven.fileprovider.FileProvider8;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -65,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 "app-debug.apk");
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        FileProvider7.setIntentDataAndType(this,
+        FileProvider8.setIntentDataAndType(this,
                 intent, "application/vnd.android.package-archive", file, true);
 
         startActivity(intent);
@@ -96,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             File file = new File(Environment.getExternalStorageDirectory(), filename);
             mCurrentPhotoPath = file.getAbsolutePath();
 
-            Uri fileUri = FileProvider7.getUriForFile(this, file);
+            Uri fileUri = FileProvider8.getUriForFile(this, file);
 
             takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
             startActivityForResult(takePictureIntent, REQUEST_CODE_TAKE_PHOTO);

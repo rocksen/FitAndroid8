@@ -1,11 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zhy.librararyforfileprovdider">
+    package="com.steven.fileprovider">
 
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
     <application>
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="${applicationId}.android7.fileprovider"
+            android:authorities="${applicationId}.android8.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
