@@ -10,7 +10,7 @@
 
 ## 使用
 
-把libra
+把 library 拉进项目依赖使用
 
 
 
@@ -28,7 +28,7 @@ public void takePhotoNoCompress(View view) {
         File file = new File(Environment.getExternalStorageDirectory(), filename);
         mCurrentPhotoPath = file.getAbsolutePath();
 	     // 仅需改变这一行
-        Uri fileUri = FileProvider7.getUriForFile(this, file);
+        Uri fileUri = FileProvider8.getUriForFile(this, file);
 
         takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
         startActivityForResult(takePictureIntent, REQUEST_CODE_TAKE_PHOTO);
@@ -51,10 +51,10 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 ```java
 public void installApk(View view) {
     File file = new File(Environment.getExternalStorageDirectory(),
-            "testandroid7-debug.apk");
+            "testandroid8-debug.apk");
     Intent intent = new Intent(Intent.ACTION_VIEW);
     // 仅需改变这一行
-    FileProvider7.setIntentDataAndType(this,
+    FileProvider8.setIntentDataAndType(this,
             intent, "application/vnd.android.package-archive", file, true);
     startActivity(intent);
 }
