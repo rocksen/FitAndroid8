@@ -1,23 +1,17 @@
-# FitAndroid7
+# FitAndroid8
 
-一行代码完成Android 7 FileProvider适配~
+一行代码完成Android 7 FileProvider适配 以及 Android 8的设配~
 
 适配FileProvide需要声明provider，编写xml，以及在代码中做版本适配等...
 
 可以抽取一个小库简化这些重复性操作，避免重复声明provider，编写xml，以及在代码中做版本适配...
 
+此项目根据 hongyangAndroid的[FitAndroid7](https://github.com/hongyangAndroid/FitAndroid7) 修改,兼容Android 8的apk安装
 
 ## 使用
 
-```
-compile 'com.zhy.base:fileprovider:1.0.0'
-```
+把libra
 
-通过FileProvider7这个类完成uri的获取即可，例如：
-
-* FileProvider7.getUriForFile
-* FileProvider7.setIntentDataAndType
-* FileProvider7.setIntentData
 
 
 ### 示例一 拍照
