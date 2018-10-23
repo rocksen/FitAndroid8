@@ -8,8 +8,6 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.0-rc03'
 
-        classpath 'com.novoda:bintray-release:0.5.0'
-
         // JitPack Maven Gradle Plugin
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
 
