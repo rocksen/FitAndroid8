@@ -23,7 +23,7 @@ allprojects {
 
 ```
 	dependencies {
-	        implementation 'com.github.steven2947:FitAndroid8:1.0.0'
+	        implementation 'com.github.steven2947:FitAndroid8:0.5.0'
 	}
 ```
 
