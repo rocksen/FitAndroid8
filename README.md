@@ -10,9 +10,22 @@
 
 ## 使用
 
-把 library 拉进项目依赖使用
+
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
 
 
+```
+	dependencies {
+	        implementation 'com.github.steven2947:FitAndroid8:1.0.0'
+	}
+```
 
 ### 示例一 拍照
 
